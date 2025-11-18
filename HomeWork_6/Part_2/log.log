@@ -1,0 +1,5 @@
+id: 1 | 2025-11-18 19:01:59.853 | level: INFO // Program Manager --- Process 0x12345 has been started | user: System
+id: 2 | 2025-11-18 19:01:59.853 | level: DEBUG // User Program --- Hello World! | user: User // Additional: debugging
+id: 3 | 2025-11-18 19:01:59.853 | level: WARN // Device Manager --- GPU temperature warning | user: System // Additional: temperature = 90
+id: 4 | 2025-11-18 19:01:59.853 | level: ERROR // Program Manager --- Process 0x12345 terminated with error 00000001 | user: System
+id: 5 | 2025-11-18 19:01:59.853 | level: FATAL // Device Manager --- GPU device disconnected unexpectedly | user: System
