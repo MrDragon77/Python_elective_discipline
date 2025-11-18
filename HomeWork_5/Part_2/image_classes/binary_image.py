@@ -1,0 +1,15 @@
+﻿from image_classes.image import Image
+import cv2
+
+class BinaryImage(Image):
+    def load(self):
+        image = cv2.imread(self.path, cv2.IMREAD_GRAYSCALE)
+        if image is None:
+            raise ValueError(f"Ошибка! Не удалось загрузить изображение {self.path}")
+        _, binary_image = cv2.threshold(image, 127, 255, cv2.THRESH_BINARY)
+        return binary_image
+        
+
+
+
+
