@@ -18,11 +18,7 @@ class HistEncoder:
 class BinHistEncoder(HistEncoder):
     @staticmethod
     def encode(file_path, data):
-        if isinstance(data, dict):
-            values = [data.get(i, 0.0) for i in range(256)]
-        else:
-            values = list(data)
-
+        values = [data.get(i, 0.0) for i in range(256)]
         with open(file_path, 'wb') as file:
             packed_data = struct.pack('f' * 256, *values)
             file.write(packed_data)
