@@ -1,0 +1,5 @@
+Image generator configuration.
+Image size 128x128 pixels.
+Number of cells 3.
+RGB color mode.
+Overlap is not allowed.
